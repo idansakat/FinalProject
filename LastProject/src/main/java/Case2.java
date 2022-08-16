@@ -2,6 +2,8 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
+
+
 public class Case2 {
     WebDriver driver;
     double FirstPrice;
@@ -148,5 +150,8 @@ public class Case2 {
         }
         return  this.FirstPrice;
     } //Always remove the first Item
+    double properDouble(double value){
+        double properValue = (int)(Math.round(value * 100))/100.0;
+        return properValue;
+    }
 }
-
